@@ -85,6 +85,7 @@
   --fs-6: 14px;
   --fs-7: 13px;
   --fs-8: 11px;
+  --fs-9: 10px;
 
   /* font-weight */
   --fw-300: 300;
@@ -158,8 +159,17 @@ html { font-family: var(--ff-poppins); }
 body { background: var(--smoky-black); }
 
 
+.hlink-find-more {
+  color: #ffff00;
+}
 
+.hlink-find-more:visited {
+  color: #556b2f;
+}
 
+.hlink-find-more:hover {
+  color: #ff6600;
+}
 
 /*-----------------------------------*\
   #REUSED STYLE
@@ -424,7 +434,7 @@ main {
 
 .contact-info :is(.contact-link, time, address) {
   color: var(--white-2);
-  font-size: var(--fs-7);
+  font-size: var(--fs-9);
 }
 
 .contact-info address { font-style: normal; }
@@ -829,6 +839,9 @@ main {
   line-height: 1.6;
 }
 
+.yellow-bullet::marker {
+  color: rgb(255, 215, 0); /* Change to your desired color */
+}
 
 /**
  * skills 
@@ -1435,8 +1448,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .testimonials-text {
-    line-clamp: 2;
-    -webkit-line-clamp: 2;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
   }
 
   /* testimonials modal */
